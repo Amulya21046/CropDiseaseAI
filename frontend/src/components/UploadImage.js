@@ -36,7 +36,7 @@ function UploadImage({ setResult }) {
       formData.append("file", file);
 
       const res = await axios.post(
-        "https://crop-disease-ai-backend.onrender.com/predict",
+        "https://cropdiseaseai.onrender.com/predict",
         formData
       );
 
