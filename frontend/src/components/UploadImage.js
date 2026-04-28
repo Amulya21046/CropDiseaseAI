@@ -36,14 +36,14 @@ function UploadImage({ setResult }) {
       formData.append("file", file);
 
       const res = await axios.post(
-        ""https://crop-disease-ai-backend.onrender.com/predict"",
+        "https://crop-disease-ai-backend.onrender.com/predict",
         formData
       );
 
       setResult(res.data);
       setError("");
     } catch {
-      setError("Backend not responding. Start FastAPI backend.");
+      setError("Backend not responding. Please check deployed backend.");
     }
 
     setLoading(false);
