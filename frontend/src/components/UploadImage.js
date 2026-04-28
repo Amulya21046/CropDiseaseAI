@@ -36,7 +36,7 @@ function UploadImage({ setResult }) {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        ""https://crop-disease-ai-backend.onrender.com/predict"",
         formData
       );
 
