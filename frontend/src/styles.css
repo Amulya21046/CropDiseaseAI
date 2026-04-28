@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0,255,170,0.25), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(0,150,255,0.22), transparent 30%),
+    linear-gradient(135deg, #020617, #052e1a, #07111f);
+  color: white;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1150px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #7CFF6B;
+  font-size: 3.2rem;
+  text-shadow: 0 0 18px #00ff88, 0 0 35px #00ff88;
+  margin-bottom: 10px;
+}
+
+.app > p {
+  color: #c9ffd5;
+  font-size: 1.1rem;
+}
+
+.card,
+.uploadCard {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 28px;
+  border-radius: 26px;
+  margin: 28px 0;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(124, 255, 107, 0.18);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.14);
+}
+
+.uploadCard h2 {
+  font-size: 2rem;
+  color: #00ffa6;
+  text-shadow: 0 0 14px rgba(0,255,166,0.8);
+}
+
+.bigFileButton {
+  display: inline-block;
+  margin: 20px;
+  padding: 18px 34px;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #00ffa6, #22d3ee);
+  color: black;
+  font-weight: 900;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 24px rgba(0,255,166,0.65);
+  transition: 0.25s;
+}
+
+.bigFileButton:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 36px rgba(0,255,166,0.9);
+}
+
+.detectButton {
+  display: block;
+  margin: 18px auto;
+  border: none;
+  border-radius: 24px;
+  padding: 20px 48px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.35rem;
+  background: linear-gradient(45deg, #7CFF6B, #00ffa6, #22d3ee);
+  color: black;
+  box-shadow: 0 0 30px rgba(0,255,166,0.7);
+  transition: 0.25s;
+}
+
+.detectButton:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 45px rgba(34,211,238,0.9);
+}
+
+.previewBox {
+  margin: 20px auto;
+}
+
+.preview {
+  width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 2px solid rgba(0,255,166,0.4);
+  box-shadow: 0 0 30px rgba(0,0,0,0.45);
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.miniCard {
+  padding: 22px;
+  border-radius: 22px;
+  min-height: 145px;
+  box-shadow: 0 0 22px rgba(0,0,0,0.28);
+  text-align: left;
+}
+
+.miniCard h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.miniCard p {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.green {
+  background: linear-gradient(135deg, #14532d, #22c55e);
+}
+
+.cyan {
+  background: linear-gradient(135deg, #064e3b, #2dd4bf);
+}
+
+.blue {
+  background: linear-gradient(135deg, #0f2f4f, #38bdf8);
+}
+
+.red {
+  background: linear-gradient(135deg, #581c1c, #ef4444);
+}
+
+.orange {
+  background: linear-gradient(135deg, #7c2d12, #fb923c);
+}
+
+.purple {
+  background: linear-gradient(135deg, #34115f, #a855f7);
+}
+
+.infoBox {
+  background: rgba(255, 255, 255, 0.09);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  border-left: 4px solid #00ffa6;
+}
+
+.infoBox h3 {
+  color: #7CFF6B;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .resultGrid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .preview {
+    width: 230px;
+  }
+}
